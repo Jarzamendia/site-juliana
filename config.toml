@@ -1,0 +1,41 @@
+baseurl = "http://9be70cc3-16b8-480a-b05f-fb85b28af866.k8s.civo.com/"
+title = "Cursos da Juliana Costa"
+theme = "hugo-creative-portfolio-theme"
+languageCode = "pt-br"
+disqusShortname = ""
+googleAnalytics = ""
+
+
+[params]
+  # blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "pink"
+  description = "Describe your website"
+
+  copyright = "&copy;2021 Jar tecnologia"
+
+  sidebarAbout = [
+    "Cursos da Juliana Costa",
+    "Texto 2",
+  ]
+
+  #email = "jearzamendia@gmail.com"
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Início"
+  url = "portfolio/"
+  home = true
+
+  [[params.navlinks]]
+  name = "Sobre os Cursos"
+  url = "sobre/"
+
+  [[params.navlinks]]
+  name = "Entre em contato"
+  url = "contact/"
+
+  [params.social]
+  instagram     = "https://www.instagram.com/studio_julianacosta/"
+  whatsapp      = "https://wa.me/5567991665112"
+  linktr        = "https://linktr.ee/studiojulianacosta"

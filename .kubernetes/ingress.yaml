@@ -1,0 +1,15 @@
+# Ingress Route
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: juliana
+  namespace: juliana
+spec:
+  entryPoints:
+    - web
+  routes:
+  - match: Host(`9be70cc3-16b8-480a-b05f-fb85b28af866.k8s.civo.com`)
+    kind: Rule
+    services:
+    - name: juliana
+      port: 80

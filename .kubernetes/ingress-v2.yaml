@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: juliana
+  namespace: juliana
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: 9be70cc3-16b8-480a-b05f-fb85b28af866.k8s.civo.com
+    http:
+      paths:
+      - backend:
+          serviceName: juliana
+          servicePort: 80
